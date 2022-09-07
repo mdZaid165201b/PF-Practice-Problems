@@ -11,7 +11,7 @@ the sum will be 210;
 
 using namespace std;
 
-void printSumofSeriesSeries(){
+void printSumofSeries(){
     bool isNegative = false;
     int sum = 0;
     for(int i = 1;i <=20; i++){
@@ -31,7 +31,7 @@ void printSumofSeriesSeries(){
 
 int main()
 {
-    printSumofSeriesSeries();
+    printSumofSeries();
 
     return 0;
 }
