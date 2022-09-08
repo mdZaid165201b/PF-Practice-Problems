@@ -16,11 +16,10 @@ void printSumofSeries(){
     int sum = 0;
     for(int i = 1;i <=20; i++){
         if(isNegative){
-            int mul  = i * i;
-            sum+= mul;
+            sum-= (i * i);
         }
         else{
-            sum-= (i*i);
+            sum+= (i*i);
         }
         isNegative =  isNegative ? false : true;
     }
