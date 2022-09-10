@@ -1,3 +1,9 @@
+/*
+    Output will be 68 C
+    
+*/
+
+
 #include <iostream>
 
 using namespace std;
