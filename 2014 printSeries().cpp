@@ -2,7 +2,7 @@
 //  2 4 6 10 16 26 42 68 110 178 288 
 
 #include <iostream>
-#include <string.h>
+
 using namespace std;
 
 
