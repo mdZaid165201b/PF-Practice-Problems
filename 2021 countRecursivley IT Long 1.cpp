@@ -18,6 +18,9 @@ int countNumber(int arr[], int num, int len, int count = 0){
 
 
 int main(){
+  int arr[6] = {2,4,2,4,5,2};
+  int len = sizeof(arr) / sizeof(arr[0]);
+  console.log(arr, 2, len);
   return 0;
 }
 
