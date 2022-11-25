@@ -3,13 +3,22 @@
 
 using namespace std;
 
-int count(int arr[], int num, int len, int count = 0){
+int countNumber(int arr[], int num, int len, int count = 0){
   if(len == 0){ return count; }
   if(len > 0){
     if(arr[len - 1] == num){
-      return count(arr, num, len - 1, count + 1);
+      return countNumber(arr, num, len - 1, count + 1);
+    }
+    else{
+      return countNumber(arr, num , len - 1, count);
     }
   }
+  return 0;
+}
+
+
+int main(){
+  return 0;
 }
 
 
