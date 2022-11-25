@@ -10,3 +10,10 @@ void findRadius(float radius){
     }
     else{ cout<<"radius is not in range!!!"; }
 }
+
+int main()
+{
+    findRadius(15);
+
+    return 0;
+}
