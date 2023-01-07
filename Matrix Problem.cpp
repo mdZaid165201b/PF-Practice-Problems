@@ -73,6 +73,17 @@ class Matrix {
             }
         }
     }
+    
+    void multiplyTwoMatrices(Matrix m2){
+        int ** temp = m2.getMatrix();
+        if(m2.getRows() == getRows() && m2.getCols() == getCols()){
+            for(int i = 0; i < no_of_rows; i++){
+                for(int j = 0; j < no_of_cols; j++){
+                    matrixArr[i][j] *= temp[i][j]; 
+                }
+            }
+        }
+    }
 };
 
 
@@ -84,8 +95,9 @@ int main()
     m1.printMatrix();
     
     Matrix m2(3,3);
+    m2.setElement(2,2,5);
     
-    m1.addTwoMatrices(m2);
+    m1.multiplyTwoMatrices(m2);
     
     cout<<endl;
     
